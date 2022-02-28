@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663788807651",
+    "project_id": "nau-timetable",
+    "storage_bucket": "nau-timetable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663788807651:android:4612f2a39deb8221602cd6",
+        "android_client_info": {
+          "package_name": "com.example.nautimetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663788807651-0adud5sjq11dopl2gtdtp1e8pofqmajt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0qgvu0oyfwTMrJWRy3GHc8c0taGQlFB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663788807651-0adud5sjq11dopl2gtdtp1e8pofqmajt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

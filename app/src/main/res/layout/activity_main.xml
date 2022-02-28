@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refreshlayout"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_margin="15dp"
+       android:id="@+id/Fab"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_baseline_add_24"
+       android:visibility="gone"/>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawer">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:id="@+id/tol"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <include
+          layout="@layout/toolbar1"
+          android:id="@+id/toolb">
+
+      </include>
+
+   </LinearLayout>
+   <fragment
+       android:layout_below="@id/tol"
+       android:id="@+id/fragment_con"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:name="com.example.nautimetable.Mon"
+       />
+
+</RelativeLayout>
+
+
+   <com.google.android.material.navigation.NavigationView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fitsSystemWindows="true"
+       android:layout_gravity="start"
+       app:headerLayout="@layout/tool"
+       app:menu="@menu/mymenu"
+       android:id="@+id/navigation"
+       >
+
+   </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>
+</RelativeLayout>

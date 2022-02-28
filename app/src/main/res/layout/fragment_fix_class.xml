@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FixClass"
+    android:background="#ffffff">
+
+<RelativeLayout
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <Spinner
+            android:id="@+id/Days_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/top"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <Spinner
+            android:id="@+id/subject_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/first"
+        android:id="@+id/second"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <Spinner
+            android:id="@+id/Time_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/second"
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        <Spinner
+            android:id="@+id/Hall_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/third"
+        android:id="@+id/fix"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="Fix Class"
+        android:background="@drawable/round"/>
+</RelativeLayout>
+</RelativeLayout>
